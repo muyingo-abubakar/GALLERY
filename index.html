@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gallery project</title>
+    <!--external css-->
+    <link rel="stylesheet" href="styles.css">
+    <!--swiperjs-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  </head>
+  <body>
+<div class="container">
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <h1>6000USD</h1>
+        <img src="https://images.unsplash.com/photo-1514826786317-59744fe2a548?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bWFjYm9vayUyMHByb3xlbnwwfHwwfHw%3D&w=1000&q=80">
+      </div>
+      <div class="swiper-slide">
+        <h1>6000USD</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4BlnflWTA-_GyTW74WdFAHQvX3PuUrS0YB3qlL947us1xb6XJy0RhsWBS7vVpX7ZhzQM&usqp=CAU"></div>
+      <div class="swiper-slide">
+        <h1>6000USD</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNpVSZgFNuHxnqLy89lIbJ1wyLG8f3YChm8Asjh0jG4Zyn4LLVHDbwU7SwaMkLZ1gesII&usqp=CAU"></div>
+      <div class="swiper-slide">
+        <h1>6000USD</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIOVAc_rRwa45RkBoY2vB2jthpK4aEBCZxFQ&usqp=CAU"></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+  </div>
+</div>
+<!--swiper-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<<script>
+  const swiper = new Swiper('.swiper', {
+autoplay: {
+delay:  3000,
+disableoninteraction: false,
+},
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+
+});
+</script>
+
+
+  </body>
+</html>
